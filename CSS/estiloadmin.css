@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 90%;
+    border: 1px solid black;
+    min-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 0.4em;
+
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "contenido contenido contenido "
+    ;
+}
+.encabezado, .contenido{
+    border: 1px solid black;
+}
+.encabezado{
+    
+    position: relative;
+    grid-area:encabezado;
+    text-align: center;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    
+    
+    
+}
+.encabezado h1{
+    position: relative;
+    left: 05%;
+}
+
+.contenedor .boton{
+    font-size: 18px;
+    position: relative;
+    left: 300%;
+    
+    
+    
+}
+.contenido{
+    grid-area:contenido;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: orangered;
+    height: 400px;
+}
+.contenido .art{
+    width: 260px;
+    padding: 3px;
+    margin-top: 3px;
+    position: relative;
+    right: 100px;
+}
+.contenido .art h2{
+    font-size: 18px;
+    text-align: center;
+    
+}
+.contenido h3{
+    font-size: 24px;
+    position: relative;
+    top: -45%;
+    text-align: center;
+    left: 45%;
+    
+}
+
+.contenido .art img{
+    
+    width: 250px;
+    height: 250px;
+}
